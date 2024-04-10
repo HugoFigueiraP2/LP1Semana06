@@ -17,7 +17,7 @@ namespace ColorSpheres
             this.alpha = alpha;
         }
 
-        private static Color ShowColor(byte red, byte green, byte blue, byte alpha)
+        public static Color ShowColor(byte red, byte green, byte blue, byte alpha)
         {
             return new Color(red, green, blue, alpha);
         }
@@ -40,10 +40,15 @@ namespace ColorSpheres
             set {green = value;}
         }
 
-        private byte Alpha_method
+        private byte SetGrey
         {
-            get {return alpha;}
-            set {alpha = value;}
+            set {red = green = blue = value;}
+        }
+
+        private byte GetGrey()
+        {
+            return (byte)((red + green + blue) / 3);
+
         }
 
 
