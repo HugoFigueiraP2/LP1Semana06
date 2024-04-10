@@ -12,7 +12,9 @@ namespace ColorSpheres
             Sphere minhaEsfera = new Sphere(4,minhaCor);
             minhaEsfera.Throw();
             minhaEsfera.Throw();
-            minhaEsfera.GetTimesThrown();
+            minhaEsfera.Pop();
+            minhaEsfera.Throw();
+            
             
             Console.WriteLine(minhaCor);
             Console.WriteLine(minhaEsfera.GetTimesThrown());

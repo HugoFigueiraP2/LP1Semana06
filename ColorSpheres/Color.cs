@@ -5,10 +5,10 @@ namespace ColorSpheres
 {
     public class Color
     {
-        private byte red;
-        private byte green;
-        private byte blue;
-        private byte alpha;
+        private  byte red;
+        private  byte green;
+        private  byte blue;
+        private  byte alpha;
         private Color(byte red, byte green, byte blue, byte alpha)
         {
             this.red = red;
@@ -21,6 +21,8 @@ namespace ColorSpheres
         {
             return new Color(red, green, blue, alpha);
         }
+
+        
 
         private byte Red_method
         {

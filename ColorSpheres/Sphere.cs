@@ -6,7 +6,7 @@ namespace ColorSpheres
     public class Sphere
     {
         private int raio;
-        private Color cor;
+        private readonly Color cor;
         private int vezes_atirado;
 
         public Sphere ( int raio, Color cor)
