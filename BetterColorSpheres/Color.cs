@@ -1,7 +1,7 @@
 using System;
 using System.Drawing;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     public class Color
     {
